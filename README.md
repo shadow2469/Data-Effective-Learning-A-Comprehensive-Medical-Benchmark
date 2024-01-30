@@ -43,23 +43,3 @@ $$
 NormDEL=\frac{1}{1+e^{-DEL}}
 $$
 
-## Citing BiRSwinT
-
-```
-@article{YANG20231166,
-title = {BiRSwinT: Bilinear full-scale residual swin-transformer for fine-grained driver behavior recognition},
-journal = {Journal of the Franklin Institute},
-volume = {360},
-number = {2},
-pages = {1166-1183},
-year = {2023},
-issn = {0016-0032},
-doi = {https://doi.org/10.1016/j.jfranklin.2022.12.016},
-url = {https://www.sciencedirect.com/science/article/pii/S0016003222008857},
-author = {Wenxuan Yang and Chenghao Tan and Yuxin Chen and Huang Xia and Xuexi Tang and Yifan Cao and Wenhui Zhou and Lili Lin and Guojun Dai}
-}
-```
-
-## Getting Started
-
--   For **Image Classification**, please see [get_started.md](get_started.md) for detailed instructions.
