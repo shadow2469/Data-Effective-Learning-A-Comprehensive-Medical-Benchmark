@@ -8,31 +8,39 @@ It consists of three parts, a dataset with millions of data samples (DataDEL), a
 
 ## Updates
 
-**_12/26/2022_**
+**_1/30/2024_**
 
 Initial commits:
 
-1. Pretrained models for Swin-Transformer-S on ImageNet-1K ([Swin-T-IN1K](https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth), [Swin-S-IN1K](https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_small_patch4_window7_224.pth), [Swin-B-IN1K](https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224.pth)) and ImageNet-22K ([Swin-B-IN22K](https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22k.pth), [Swin-L-IN22K](https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window7_224_22k.pth)) are provided.
-2. The supported code for AUC and StateFarm image classification are provided.
+1. The introduction of our Comprehensive Medical Benchmark.
+
+## Abstact
+
+**Data-effective learning** aims to use data in the most impactful way to train AI models, which involves strategies that focus on data quality rather than quantity, ensuring the data used for training has high informational value. Data-effective learning plays a profound role in accelerating AI training, reducing computational costs, and saving data storage, which is very important as the volume of medical data in recent years has grown beyond many people's expectations. However, due to the lack of standards and comprehensive benchmark, research on medical data-effective learning is poorly studied. To address this gap, our paper introduces a comprehensive benchmark specifically for evaluating data-effective learning in the medical field. This benchmark includes a dataset with millions of data samples from 31 medical centers (DataDEL), a baseline method for comparison (MedDEL), and a new evaluation metric (NormDEL) to objectively measure data-effective learning performance. Our extensive experimental results show the baseline MedDEL can achieve performance comparable to the original large dataset with only 5% of the data. Establishing such an open data-effective learning benchmark is crucial for the medical AI research community because it facilitates efficient data use, promotes collaborative breakthroughs, and fosters the development of cost-effective, scalable, and impactful healthcare solutions.
+
 
 ## Introduction
+In the era of big data, large models often require massive pre-training data. However, our perspective challenges this conventional thinking, and we have undertaken the following work to explore this issue in depth.
 
-**BiRSwinT** The bilinear fusion method can solve the fine-grained recognition problem to a certain extent.
-After getting the deep descriptors of an image, bilinear pooling computes the sum of the outer
-product of those deep descriptors. Bilinear pooling captures all pairwise descriptor interactions,
-i.e., interactions of different part.
+There are three parts in our benchmark, a dataset with millions of data samples (DataDEL), a baseline method for comparison (MedDEL) and a new evaluation metric (NormDEL). 
 
-    This project aims at solving the problem of poor fine-grained characterization of a single
-    Swin-Transformer model in driver distraction tasks.We interpret the two branches of the bilinear
-    model as the global feature branch and the local feature branch, respectively, with the global branch
-    applying the Swin-Transformer-S model and the local branch applying the Dense-Swin-Transformer model
-    with residuals between Stages.
+### DataDEL
+Our efforts focus on integrating datasets from over 31 different centers and 23 different countries, spanning multiple modalities such as images and videos. Furthermore, our dataset surpasses the million-scale mark, becoming a large-scale collection that encompasses multiple tasks, modalities, sources, and diseases. This dataset can provide rich and diverse support for subsequent research, offering significant convenience for healthcare professionals and research institutions.
+![teaser](figures/Fig2.png)
 
-![teaser](figures/teaser.png)
+### MedDEL
+We introduce a benchmark baseline method (MedDEL) in the endoscopic medical field, which is based on the principles of the SemDeDup method.
+![teaser](figures/Fig3.png)
 
-## Preparing the Model Data
+### NormDEL
+We propose a new data-effective metric, the Normalized Delete Index (NormDEL). Our objective is that within the same task, if a model can achieve the same level of performance in downstream tasks using fewer pre-training data, its data-effective performance should be considered superior.
+$$
+DEL=mIoU \cdot e^{-\alpha \cdot R}
+$$
 
-There are two checkpoints in BiRSwinT.py where we need to use some pre-trained model files.You can download these two files from here: https://huggingface.co/Pluto2469/BiRSwinT/tree/main
+$$
+NormDEL=\frac{1}{1+e^{-DEL}}
+$$
 
 ## Citing BiRSwinT
 
