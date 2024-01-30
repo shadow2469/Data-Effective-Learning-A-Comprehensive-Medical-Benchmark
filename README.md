@@ -1,5 +1,6 @@
 # Data-Effective Learning: A Comprehensive Medical Benchmark
-This repo is the official implementation of ["Data-Effective Learning: A Comprehensive Medical Benchmark"]. It consists of three parts, a dataset with millions of data samples (DataDEL), a baseline method for comparison (MedDEL), and a new evaluation metric (NormDEL). 
+This repo is the official implementation of ["Data-Effective Learning: A Comprehensive Medical Benchmark"]. 
+It consists of three parts, a dataset with millions of data samples (DataDEL), a baseline method for comparison (MedDEL), and a new evaluation metric (NormDEL). 
 
 ![Fig1](https://github.com/shadow2469/Data-Effective-Learning-A-Comprehensive-Medical-Benchmark/assets/69713750/859a471f-28b0-490f-b62a-aadb11fe5f0c)
 
