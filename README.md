@@ -1,6 +1,11 @@
 # Data-Effective Learning: A Comprehensive Medical Benchmark
+We introduce the concept of Data-Effective Learning, which plays a significant role in the field of medical data, accelerating model training and reducing storage burden in the era of big data (Fig 1(a)).
+
+Data-effective learning aims to obtain a compact small dataset from a large-scale dataset, but the two datasets have similar effects on AI model training.
+
 This repo is the official implementation of ["Data-Effective Learning: A Comprehensive Medical Benchmark"]. 
-It consists of three parts, a dataset with millions of data samples (DataDEL), a baseline method for comparison (MedDEL), and a new evaluation metric (NormDEL). 
+
+It consists of three parts, a dataset with millions of data samples (DataDEL), a baseline method for comparison (MedDEL), and a new evaluation metric (NormDEL) ((Fig 1(b))). 
 
 <div style="text-align: center;">
   <img src="figures/Fig1.png" alt="Fig1" height="500">
@@ -42,4 +47,4 @@ $$
 $$
 NormDEL=\frac{1}{1+e^{-DEL}}
 $$
-
+X
