@@ -47,4 +47,3 @@ $$
 $$
 NormDEL=\frac{1}{1+e^{-DEL}}
 $$
-X
