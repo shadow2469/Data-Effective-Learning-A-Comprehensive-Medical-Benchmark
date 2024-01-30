@@ -34,6 +34,7 @@ We introduce a benchmark baseline method (MedDEL) in the endoscopic medical fiel
 
 ### NormDEL
 We propose a new data-effective metric, the Normalized Delete Index (NormDEL). Our objective is that within the same task, if a model can achieve the same level of performance in downstream tasks using fewer pre-training data, its data-effective performance should be considered superior.
+
 $$
 DEL=mIoU \cdot e^{-\alpha \cdot R}
 $$
