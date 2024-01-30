@@ -2,7 +2,9 @@
 This repo is the official implementation of ["Data-Effective Learning: A Comprehensive Medical Benchmark"]. 
 It consists of three parts, a dataset with millions of data samples (DataDEL), a baseline method for comparison (MedDEL), and a new evaluation metric (NormDEL). 
 
-<img src="figures/Fig1.png" alt="Fig1" height="500">
+<div style="text-align: center;">
+  <img src="figures/Fig1.png" alt="Fig1" height="500">
+</div>
 
 ## Updates
 
