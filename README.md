@@ -47,3 +47,16 @@ $$
 $$
 NormDEL=\frac{1}{1+e^{-DEL}}
 $$
+
+## Citing Us
+
+```
+@inproceedings{
+yang2024a,
+title={A Medical Data-Effective Learning Benchmark for Highly Efficient Pre-training of Foundation Models},
+author={Wenxuan Yang and Weimin Tan and Yuqi Sun and Bo Yan},
+booktitle={ACM Multimedia 2024},
+year={2024},
+url={https://openreview.net/forum?id=n10Ax1bixC}
+}
+```
