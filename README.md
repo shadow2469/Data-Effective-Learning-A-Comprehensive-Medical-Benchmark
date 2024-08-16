@@ -3,7 +3,7 @@ We introduce the concept of Data-Effective Learning, which plays a significant r
 
 Data-effective learning aims to obtain a compact small dataset from a large-scale dataset, but the two datasets have similar effects on AI model training.
 
-This repo is the official implementation of ["Data-Effective Learning: A Comprehensive Medical Benchmark"](https://arxiv.org/abs/2401.17542). 
+This repo is the official implementation of ["A Medical Data-Effective Learning Benchmark for Highly Efficient Pre-training of Foundation Models"](https://arxiv.org/abs/2401.17542). 
 
 It consists of three parts, a dataset with millions of data samples (DataDEL), a baseline method for comparison (MedDEL), and a new evaluation metric (NormDEL) ((Fig 1(b))). 
 
